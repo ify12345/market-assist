@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.className} overflow-x-hidden overflow-y-scroll`}>{children}</body>
+      <body className={`${nunito.className} overflow-x-hidden`}>{children}</body>
     </html>
   );
 }
