@@ -4,6 +4,8 @@ import { FiPhone, FiMail } from "react-icons/fi";
 import { IoChevronDown } from "react-icons/io5";
 import FaceBookSvg from "../../public/icons/FaceBookSvg";
 import TwitterSvg from "../../public/icons/TwitterSvg";
+import { IoMenu } from "react-icons/io5";
+import { IoCloseSharp } from "react-icons/io5";
 import LinkedinSvg from "../../public/icons/LinkedinSvg";
 import InstagramSvg from "../../public/icons/InstagramSvg";
 import Link from "next/link";
@@ -104,26 +106,38 @@ const NavBar: React.FC = () => {
           </div>
         </div>
       </nav>
-      <nav className="px-[] lg:px-[100px] flex justify-between items-center py-[17px]">
-        <div className="max-w-[101px] w-full">
+      <nav className="px-[30px] lg:px-[100px] flex  items-center justify-between py-[17px] bg-black lg:bg-white">
+        <div className="w-[101px]">
           <img
-            className="w-full object-cover"
+            className="w-full object-cover lg:hidden"
+            src="/logo/ma-logo.svg"
+            alt="logo"
+          />
+          <img
+            className="w-full object-cover hidden lg:block"
             src="/logo/ma-logo.png"
             alt="logo"
           />
         </div>
 
-        <div className="flex items-center gap-[24px] text-black leading-[16px] text-[16px] font-medium">
+        <div className="lg:flex items-center gap-[24px] text-[#1B2605] leading-[16px] text-[16px] font-medium hidden ml-[150px]">
           <Link href="#about">Assist</Link>
           <Link href="#about">Shopper</Link>
           <Link href="#about">FAQ</Link>
           <Link href="#about">About</Link>
         </div>
 
-        <div className="flex items-center gap-[24px]">
+        <div className="hidden lg:flex items-center gap-[24px]">
           <SecondaryButton>Sign In</SecondaryButton>
           <PrimaryButton className="bg-black">Sign Up</PrimaryButton>
         </div>
+
+        <button className="block lg:hidden">
+          <IoMenu size={36} color="white" />
+        </button>
+        {/* <button className="block lg:hidden">
+          <IoCloseSharp size={36} color="white" />
+        </button> */}
       </nav>
     </div>
   );
