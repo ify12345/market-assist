@@ -1,0 +1,66 @@
+import React from "react";
+import ProSvg from "../../public/icons/Pro";
+import LocationSvg from "../../public/icons/Location";
+import ClockSvg from "../../public/icons/Clock";
+
+const Faq = () => {
+  return (
+    <div className="relative z-30 bg-[#ECF8E8]  w-full justify-center lg:flex flex-col lg:flex-row items-center px-[30px] lg:pl-[70px] lg:pr-[100px] gap-[34px] pt-[95px] pb-[89px] 2xl:px-[300px]">
+      <div className="max-w-[516px] w-full">
+        <img className="w-full object-cover" src="/images/faq.jpg" alt="logo" />
+      </div>
+
+      <div className="flex flex-col gap-[30px] w-full">
+        <h1 className="text-black text-[40px] leading-[40px] font-[600] tracking-[2%]  w-full flex flex-col">
+          Frequently Asked Questions
+        </h1>
+        <h6 className="text-black text-[20px] leading-[26px] font-medium -tracking-[2%]">
+          Here are some commonly asked question?
+        </h6>
+
+        <ul className="flex flex-col gap-[22px]">
+          <li className="flex flex-col gap-[14px] bg-white px-[16px] py-[21px]">
+            <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%] pb-[14px] border-b border-[#909090]">
+              1. How much does it cost to get an market assistant for a whole
+              day?
+            </span>
+            <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%] text-[#909090]">
+              The Ideal cost for a market agent vary in respect to the market
+              location and the manner of assist the user require of the agent.
+            </span>
+          </li>
+          <li className="flex flex-col gap-[14px] bg-white px-[16px] py-[21px]">
+            <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%]">
+              2. Who are the experts and professionals available on Market
+              Assist?
+            </span>
+          </li>
+          <li className="flex flex-col gap-[14px] bg-white px-[16px] py-[21px]">
+            <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%]">
+              3. How can Market Assist help me make better market decisions?
+            </span>
+          </li>
+          <li className="flex flex-col gap-[14px] bg-white px-[16px] py-[21px]">
+            <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%]">
+              4. Is Market Assist suitable for beginners or only for experienced
+              market participants?
+            </span>
+          </li>
+          <li className="flex flex-col gap-[14px] bg-white px-[16px] py-[21px]">
+            <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%]">
+              5. How do I get started with Market Assist?
+            </span>
+          </li>
+          <li className="flex flex-col gap-[14px] bg-white px-[16px] py-[21px]">
+            <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%]">
+              6. How does Market Assist ensure the accuracy and reliability of
+              the information provided?
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Faq;
