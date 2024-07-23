@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ScrollReveal from 'scrollreveal';
 import ProSvg from "../../public/icons/Pro";
 import LocationSvg from "../../public/icons/Location";
 import ClockSvg from "../../public/icons/Clock";
 
 const Earning = () => {
+  useEffect(() => {
+    ScrollReveal().reveal('.reveal', {
+      origin: 'bottom',
+      distance: '20px',
+      duration: 1000,
+      interval: 200,
+      reset: true
+    });
+    ScrollReveal().reveal('.revealLeft', {
+      origin: 'left',
+      distance: '60px',
+      duration: 2000,
+      interval: 100,
+      reset: true
+    });
+
+    // Cleanup on unmount
+    return () => ScrollReveal().destroy();
+  }, []);
+
   return (
     <div className=" bg-[#ECF8E8]  w-full justify-center lg:flex flex-col lg:flex-row items-center px-[30px] lg:pl-[52px] lg:pr-[100px] gap-[150px]">
-      <div className="max-w-[602px] w-full">
+      <div className="max-w-[602px] w-full revealLeft">
         <img
           className="w-full object-cover"
           src="/images/hero4.png"
@@ -14,7 +35,7 @@ const Earning = () => {
         />
       </div>
 
-      <div className="flex flex-col gap-[30px] w-full max-w-[527px] pt-[151px] pb-[150px]">
+      <div className="flex flex-col gap-[30px] w-full max-w-[527px] pt-[151px] pb-[150px] reveal">
         <h1 className="text-black text-[40px] leading-[48px] font-bold  w-full flex flex-col">
           Start Earning Through Shopping.
         </h1>

@@ -1,10 +1,31 @@
 import Link from "next/link";
+import React, { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 const Hero = () => {
+  useEffect(() => {
+    ScrollReveal().reveal('.reveal', {
+      origin: 'bottom',
+      distance: '20px',
+      duration: 1000,
+      interval: 200,
+      reset: true
+    });
+    ScrollReveal().reveal('.revealLeft', {
+      origin: 'left',
+      distance: '60px',
+      duration: 2000,
+      interval: 100,
+      reset: true
+    });
+
+    // Cleanup on unmount
+    return () => ScrollReveal().destroy();
+  }, []);
   return (
     <>
       <div className="hidden bg-[#ECF8E8]  w-full justify-center lg:flex flex-col lg:flex-row items-center px-[30px] lg:px-[100px] gap-[72px]">
-        <div className="flex flex-col w-full max-w-[538px] pt-[183px] pb-[155px]">
+        <div className="flex flex-col w-full max-w-[538px] pt-[183px] pb-[155px] revealLeft">
           <h6 className="text-primary text-[15px] leading-normal font-semibold">
             Connect with Experts Anytime, Anywhere.
           </h6>
@@ -45,7 +66,7 @@ const Hero = () => {
 
         <div className="max-w-[]">
           <img
-            className="w-full object-cover"
+            className="w-full object-cover reveal"
             src="/images/hero-img.jpg"
             alt="logo"
           />

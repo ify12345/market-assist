@@ -1,13 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CartSvg from "../../public/icons/Cart";
 import HqSvg from "../../public/icons/Hq";
 import TruckSvg from "../../public/icons/Truck";
 import TimerSvg from "../../public/icons/Timer";
+import ScrollReveal from 'scrollreveal';
 
 const Advantage = () => {
+  useEffect(() => {
+    ScrollReveal().reveal('.reveal', {
+      origin: 'bottom',
+      distance: '20px',
+      duration: 1000,
+      interval: 200,
+      reset: true
+    });
+    ScrollReveal().reveal('.revealLeft', {
+      origin: 'left',
+      distance: '60px',
+      duration: 2000,
+      interval: 100,
+      reset: true
+    });
+
+    // Cleanup on unmount
+    return () => ScrollReveal().destroy();
+  }, []);
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center gap-[146px] px-[30px] lg:px-[100px]">
-      <div className="flex flex-col pt-[219px] pb-[144px] w-full lg:w-[575px]">
+      <div className="flex flex-col pt-[219px] pb-[144px] w-full lg:w-[575px] revealLeft">
         <h1 className="text-black text-[40px] leading-[40px] font-bold tracking-[2%]  pb-[30px] w-full ">
           We Shop, You Relax
         </h1>
@@ -47,7 +67,7 @@ const Advantage = () => {
         </button>
       </div>
 
-      <div className="max-w-[]">
+      <div className="max-w-[] reveal">
         <img src="/images/hero2.jpg" className="w-full object-cover" alt="" />
       </div>
     </div>

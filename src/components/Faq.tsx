@@ -1,16 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ScrollReveal from 'scrollreveal';
 import ProSvg from "../../public/icons/Pro";
 import LocationSvg from "../../public/icons/Location";
 import ClockSvg from "../../public/icons/Clock";
 
 const Faq = () => {
+  useEffect(() => {
+    ScrollReveal().reveal('.revealTop', {
+      origin: 'top',
+      distance: '20px',
+      duration: 3000,
+      interval: 200,
+      reset: true
+    });
+    ScrollReveal().reveal('.revealLeft', {
+      origin: 'left',
+      distance: '60px',
+      duration: 2000,
+      interval: 100,
+      reset: true
+    });
+
+    // Cleanup on unmount
+    return () => ScrollReveal().destroy();
+  }, []);
   return (
-    <div className="relative z-30 bg-[#ECF8E8]  w-full justify-center lg:flex flex-col lg:flex-row items-center px-[30px] lg:pl-[70px] lg:pr-[100px] gap-[34px] pt-[95px] pb-[89px] 2xl:px-[300px]">
+    <div className="relative z-30 bg-[#ECF8E8] revealTop w-full justify-center lg:flex flex-col lg:flex-row items-center px-[30px] lg:pl-[70px] lg:pr-[100px] gap-[34px] pt-[95px] pb-[89px] 2xl:px-[300px]">
       <div className="max-w-[516px] w-full">
         <img className="w-full object-cover" src="/images/faq.jpg" alt="logo" />
       </div>
 
-      <div className="flex flex-col gap-[30px] w-full">
+      <div className="flex flex-col gap-[30px] w-full revealLeft">
         <h1 className="text-black text-[40px] leading-[40px] font-[600] tracking-[2%]  w-full flex flex-col">
           Frequently Asked Questions
         </h1>

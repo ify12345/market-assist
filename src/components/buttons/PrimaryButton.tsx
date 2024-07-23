@@ -9,7 +9,7 @@ interface ButtonProps {
 }
 
 const PrimaryButton: React.FC<ButtonProps> = ({ children, onClick, className, loading }) => {
-  const defaultStyles = 'flex justify-center items-center w-[120px] h-[42px] rounded-[30px] bg-primary text-white font-[500] text-[16px] leading-[16px]';
+  const defaultStyles = 'flex justify-center items-center w-[120px] h-[42px] rounded-[30px] bg-primary text-white font-[500] text-[16px] leading-[16px] hover:scale-95 transition-all duration-300';
   const combinedClassNames = classNames(defaultStyles, className, { 'opacity-50 cursor-not-allowed': loading });
 
   return (
