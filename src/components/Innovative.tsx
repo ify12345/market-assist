@@ -1,6 +1,5 @@
-
 import React, { useEffect } from "react";
-import ScrollReveal from 'scrollreveal';
+import ScrollReveal from "scrollreveal";
 import CartSvg from "../../public/icons/Cart";
 import HqSvg from "../../public/icons/Hq";
 import TruckSvg from "../../public/icons/Truck";
@@ -12,19 +11,19 @@ import SmileySvg from "../../public/icons/Smiley";
 
 const Innovative = () => {
   useEffect(() => {
-    ScrollReveal().reveal('.revealRight', {
-      origin: 'right',
-      distance: '20px',
+    ScrollReveal().reveal(".revealRight", {
+      origin: "right",
+      distance: "20px",
       duration: 3000,
       interval: 200,
-      reset: true
+      reset: true,
     });
-    ScrollReveal().reveal('.revealLeft', {
-      origin: 'left',
-      distance: '60px',
+    ScrollReveal().reveal(".revealLeft", {
+      origin: "left",
+      distance: "60px",
       duration: 2000,
       interval: 100,
-      reset: true
+      reset: true,
     });
 
     // Cleanup on unmount

@@ -1,24 +1,24 @@
 import React, { useEffect } from "react";
-import ScrollReveal from 'scrollreveal';
+import ScrollReveal from "scrollreveal";
 import ProSvg from "../../public/icons/Pro";
 import LocationSvg from "../../public/icons/Location";
 import ClockSvg from "../../public/icons/Clock";
 
 const Earning = () => {
   useEffect(() => {
-    ScrollReveal().reveal('.reveal', {
-      origin: 'bottom',
-      distance: '20px',
+    ScrollReveal().reveal(".reveal", {
+      origin: "bottom",
+      distance: "20px",
       duration: 1000,
       interval: 200,
-      reset: true
+      reset: true,
     });
-    ScrollReveal().reveal('.revealLeft', {
-      origin: 'left',
-      distance: '60px',
+    ScrollReveal().reveal(".revealLeft", {
+      origin: "left",
+      distance: "60px",
       duration: 2000,
       interval: 100,
-      reset: true
+      reset: true,
     });
 
     // Cleanup on unmount

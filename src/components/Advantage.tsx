@@ -3,23 +3,23 @@ import CartSvg from "../../public/icons/Cart";
 import HqSvg from "../../public/icons/Hq";
 import TruckSvg from "../../public/icons/Truck";
 import TimerSvg from "../../public/icons/Timer";
-import ScrollReveal from 'scrollreveal';
+import ScrollReveal from "scrollreveal";
 
 const Advantage = () => {
   useEffect(() => {
-    ScrollReveal().reveal('.reveal', {
-      origin: 'bottom',
-      distance: '20px',
+    ScrollReveal().reveal(".reveal", {
+      origin: "bottom",
+      distance: "20px",
       duration: 1000,
       interval: 200,
-      reset: true
+      reset: true,
     });
-    ScrollReveal().reveal('.revealLeft', {
-      origin: 'left',
-      distance: '60px',
+    ScrollReveal().reveal(".revealLeft", {
+      origin: "left",
+      distance: "60px",
       duration: 2000,
       interval: 100,
-      reset: true
+      reset: true,
     });
 
     // Cleanup on unmount
