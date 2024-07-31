@@ -118,7 +118,7 @@ const NavBar: React.FC = () => {
       </nav>
       <Disclosure as="nav" className='bg-black  lg:bg-white'>
         <div className="px-[30px] lg:px-[100px] flex  items-center justify-between py-[17px]">
-          <div className="w-[101px]">
+          <Link href="/" className="w-[101px]">
             <img
               className="w-full object-cover lg:hidden"
               src="/logo/ma-logo.svg"
@@ -129,13 +129,13 @@ const NavBar: React.FC = () => {
               src="/logo/ma-logo.png"
               alt="logo"
             />
-          </div>
+          </Link>
 
           <div className="lg:flex items-center gap-[24px] text-[#1B2605] leading-[16px] text-[16px] font-medium hidden ml-[150px]">
-            <Link href="#about">Assist</Link>
-            <Link href="#about">Shopper</Link>
-            <Link href="#about">FAQ</Link>
-            <Link href="#about">About</Link>
+            <Link href="#assist" className="hover:text-primary transition-all delay-100 hover:border-b hover:border-b-primary">Assist</Link>
+            <Link href="#shopper" className="hover:text-primary transition-all delay-100 hover:border-b hover:border-b-primary">Shopper</Link>
+            <Link href="#faq" className="hover:text-primary transition-all delay-100 hover:border-b hover:border-b-primary">FAQ</Link>
+            <Link href="#about" className="hover:text-primary transition-all delay-100 hover:border-b hover:border-b-primary">About</Link>
           </div>
 
           <div className="hidden lg:flex items-center gap-[24px]">
@@ -171,7 +171,7 @@ const NavBar: React.FC = () => {
             <div className="mt-3 space-y-1 px-2">
               <DisclosureButton
                 as="a"
-                href="#"
+                href="/assist"
                 className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-white hover:text-primary"
               >
                 Assist
@@ -180,7 +180,7 @@ const NavBar: React.FC = () => {
             <div className="mt-3 space-y-1 px-2">
               <DisclosureButton
                 as="a"
-                href="#"
+                href="/shopper"
                 className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-white hover:text-primary"
               >
                 Shopper
@@ -189,7 +189,7 @@ const NavBar: React.FC = () => {
             <div className="mt-3 space-y-1 px-2">
               <DisclosureButton
                 as="a"
-                href="#"
+                href="/faq"
                 className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-white hover:text-primary"
               >
                 Faq
@@ -198,7 +198,7 @@ const NavBar: React.FC = () => {
             <div className="mt-3 space-y-1 px-2">
               <DisclosureButton
                 as="a"
-                href="#"
+                href="/about"
                 className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-white hover:text-primary"
               >
                 About
@@ -209,7 +209,7 @@ const NavBar: React.FC = () => {
           <div className="space-y-1 px-2 pb-3 pt-2 flex flex-col">
             <DisclosureButton
               as="a"
-              href="#"
+              href="/sign-in"
               className="rounded-md px-3 py-2 text-base font-medium text-white border-white border hover:scale-95 justify-center flex bg-primary transition-all duration-300"
             >
                  Sign In
@@ -217,7 +217,7 @@ const NavBar: React.FC = () => {
             </DisclosureButton>
             <DisclosureButton
               as="a"
-              href="#"
+              href="/sign-up"
               className="rounded-md px-3 py-2 text-base font-medium text-primary justify-center flex bg-white hover:scale-95 transition-all duration-300"
             >
                  Sign up
