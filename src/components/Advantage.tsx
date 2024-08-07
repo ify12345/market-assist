@@ -11,7 +11,7 @@ const Advantage = () => {
       origin: "bottom",
       distance: "20px",
       duration: 1000,
-      interval: 200,
+      interval: 400,
       reset: true,
     });
     ScrollReveal().reveal(".revealLeft", {
@@ -26,8 +26,8 @@ const Advantage = () => {
     return () => ScrollReveal().destroy();
   }, []);
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-[146px] px-[30px] lg:px-[100px]">
-      <div className="flex flex-col pt-[219px] pb-[144px] w-full lg:w-[575px] revealLeft">
+    <div className="flex flex-col lg:flex-row items-center justify-center gap-[50px] lg:gap-[146px] px-[30px] lg:px-[100px] pt-[97px] lg:pt-0">
+      <div className="flex flex-col lg:pt-[219px] lg:pb-[144px] w-full lg:w-[575px] revealLeft">
         <h1 className="text-black text-[40px] leading-[40px] font-bold tracking-[2%]  pb-[30px] w-full ">
           We Shop, You Relax
         </h1>

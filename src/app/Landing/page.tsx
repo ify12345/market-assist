@@ -7,6 +7,7 @@ const Hero = dynamic(() => import('@/components/Hero'), { ssr: false });
 const Advantage = dynamic(() => import('@/components/Advantage'), { ssr: false });
 const Earning = dynamic(() => import('@/components/Earning'), { ssr: false });
 const Innovative = dynamic(() => import('@/components/Innovative'), { ssr: false });
+const About = dynamic(() => import('@/components/About'), { ssr: false });
 const Faq = dynamic(() => import('@/components/Faq'), { ssr: false });
 const GetApp = dynamic(() => import('@/components/GetApp'), { ssr: false });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: false });
@@ -31,6 +32,7 @@ export default function Landing() {
         <Advantage />
         <Earning />
         <Innovative />
+        <About/>
         <Faq />
         <GetApp />
         <Footer />

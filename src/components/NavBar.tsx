@@ -26,7 +26,7 @@ const NavBar: React.FC = () => {
   const [selected, setSelected] = useState<{
     name: string;
     src: string;
-  } | null>(null);
+  } | null>(null)
   const [isOpen, setIsOpen] = useState(false);
 
   const currency = [
@@ -109,10 +109,12 @@ const NavBar: React.FC = () => {
             </div>
           )}
           <div className="flex items-center gap-1">
+
             <FaceBookSvg />
             <TwitterSvg />
             <LinkedinSvg />
             <InstagramSvg />
+
           </div>
         </div>
       </nav>

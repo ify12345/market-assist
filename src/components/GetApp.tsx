@@ -10,9 +10,9 @@ import SmileySvg from "../../public/icons/Smiley";
 
 const GetApp = () => {
   return (
-    <div className="relative bg-black flex flex-col lg:flex-row items-center justify-center gap-[150px] px-[30px] lg:px-[100px]">
-      <div className="flex flex-col gap-[30px] pt-[258px] pb-[237px] w-full lg:w-[610px] text-white">
-        <h1 className="text-[40px] leading-[40px] font-bold w-full tracking-[2%]">
+    <div className="relative bg-black flex flex-col lg:flex-row items-center py-[89px] lg:py-0 justify-center gap-[49px] lg:gap-[150px] px-[30px] lg:px-[100px]">
+      <div className="flex flex-col gap-[30px] lg:pt-[258px] lg:pb-[237px] w-full lg:w-[610px] text-white">
+        <h1 className="text-[20px] lg:text-[40px] text-primary lg:text-white leading-[20px] lg:leading-[40px] font-bold w-full tracking-[2%]">
           Download our app
         </h1>
         <h1 className="text-[24px] leading-[34px] font-[500] w-full -tracking-[2%]">

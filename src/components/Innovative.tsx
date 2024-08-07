@@ -30,8 +30,8 @@ const Innovative = () => {
     return () => ScrollReveal().destroy();
   }, []);
   return (
-    <div className="relative flex flex-col lg:flex-row items-center justify-center gap-[150px] px-[30px] lg:px-[100px]">
-      <div className="flex flex-col gap-[30px] pt-[219px] pb-[236px] w-full lg:w-[575px] revealLeft">
+    <div className="relative flex flex-col lg:flex-row items-center justify-center gap-[20px] lg:gap-[150px] px-[30px] lg:px-[100px] py-[105px]">
+      <div className="flex flex-col gap-[30px] lg:pt-[219px] lg:pb-[236px] w-full lg:w-[575px] revealLeft">
         <h1 className="text-black text-[40px] leading-[40px] font-bold tracking-[2%] w-full ">
           The innovative and effortless way to shop
         </h1>
@@ -71,10 +71,10 @@ const Innovative = () => {
         </button>
       </div>
 
-      <div className="max-w-[]">
-        <img src="/images/hero3.jpg" className="w-full object-cover" alt="" />
+      <div className="w-full max-w-[548px]">
+        <img src="/images/hero3.png" className="w-full object-cover" alt="" />
       </div>
-      <div className="max-w-[97px] w-full absolute -bottom-[40px] right-[100px] 2xl:right-[300px] z-10 revealRight">
+      <div className="max-w-[97px] w-full flex lg:hidden  absolute -bottom-[40px] right-[30px] 2xl:right-[300px] z-10 revealRight">
         <img src="/icons/Dots.svg" className="w-full object-cover" alt="" />
       </div>
     </div>

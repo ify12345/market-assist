@@ -25,10 +25,8 @@ const Faq = () => {
     return () => ScrollReveal().destroy();
   }, []);
   return (
-    <div className="relative z-30 bg-[#ECF8E8] revealTop w-full justify-center lg:flex flex-col lg:flex-row items-center px-[30px] lg:pl-[70px] lg:pr-[100px] gap-[34px] pt-[95px] pb-[89px] 2xl:px-[300px]">
-      <div className="max-w-[516px] w-full">
-        <img className="w-full object-cover" src="/images/faq.jpg" alt="logo" />
-      </div>
+    <div className="relative z-10  revealTop w-full justify-center lg:flex flex-col lg:flex-row items-center px-[30px] lg:pl-[70px] lg:pr-[100px] gap-[34px] pt-[150px] pb-[150px] 2xl:px-[300px]">
+    
 
       <div className="flex flex-col gap-[30px] w-full revealLeft">
         <h1 className="text-black text-[40px] leading-[40px] font-[600] tracking-[2%]  w-full flex flex-col">
@@ -39,8 +37,8 @@ const Faq = () => {
         </h6>
 
         <ul className="flex flex-col gap-[22px]">
-          <li className="flex flex-col gap-[14px] bg-white px-[16px] py-[21px]">
-            <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%] pb-[14px] border-b border-[#909090]">
+          <li className="flex flex-col gap-[14px]  px-[16px] py-[21px] bg-[#ECF8E8] ">
+            <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%] pb-[14px] bg-[#F5FBF3] border-b border-[#909090]">
               1. How much does it cost to get an market assistant for a whole
               day?
             </span>
@@ -49,35 +47,39 @@ const Faq = () => {
               location and the manner of assist the user require of the agent.
             </span>
           </li>
-          <li className="flex flex-col gap-[14px] bg-white px-[16px] py-[21px]">
+          <li className="flex flex-col gap-[14px] bg-[#F5FBF3]  px-[16px] py-[21px]">
             <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%]">
               2. Who are the experts and professionals available on Market
               Assist?
             </span>
           </li>
-          <li className="flex flex-col gap-[14px] bg-white px-[16px] py-[21px]">
+          <li className="flex flex-col gap-[14px] bg-[#F5FBF3]  px-[16px] py-[21px]">
             <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%]">
               3. How can Market Assist help me make better market decisions?
             </span>
           </li>
-          <li className="flex flex-col gap-[14px] bg-white px-[16px] py-[21px]">
+          <li className="flex flex-col gap-[14px] bg-[#F5FBF3]  px-[16px] py-[21px]">
             <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%]">
               4. Is Market Assist suitable for beginners or only for experienced
               market participants?
             </span>
           </li>
-          <li className="flex flex-col gap-[14px] bg-white px-[16px] py-[21px]">
+          <li className="flex flex-col gap-[14px] bg-[#F5FBF3]  px-[16px] py-[21px]">
             <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%]">
               5. How do I get started with Market Assist?
             </span>
           </li>
-          <li className="flex flex-col gap-[14px] bg-white px-[16px] py-[21px]">
+          <li className="flex flex-col gap-[14px] bg-[#F5FBF3]  px-[16px] py-[21px]">
             <span className="font-[500] text-[16px] leading-[16px] -tracking-[2%]">
               6. How does Market Assist ensure the accuracy and reliability of
               the information provided?
             </span>
           </li>
         </ul>
+      </div>
+
+      <div className="max-w-[516px] w-full hidden lg:block">
+        <img className="w-full object-cover" src="/images/faq.png" alt="logo" />
       </div>
     </div>
   );

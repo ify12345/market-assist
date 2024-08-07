@@ -24,7 +24,7 @@ const Hero = () => {
   }, []);
   return (
     <>
-      <div className="hidden bg-[#ECF8E8]  w-full justify-center lg:flex flex-col lg:flex-row items-center px-[30px] lg:px-[100px] gap-[72px]">
+      <div className="bg-[#ECF8E8]  w-full justify-center lg:flex flex-col lg:flex-row items-center px-[30px] lg:px-[100px] gap-[72px]">
         <div className="flex flex-col w-full max-w-[538px] pt-[183px] pb-[155px] revealLeft">
           <h6 className="text-primary text-[15px] leading-normal font-semibold">
             Connect with Experts Anytime, Anywhere.
@@ -72,7 +72,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="flex lg:hidden relative bg-[url('/images/hero-bg.png')] h-[687px] bg-center bg-cover bg-no-repeat">
+      {/* <div className="flex lg:hidden relative bg-[url('/images/hero-bg.png')] h-[687px] bg-center bg-cover bg-no-repeat">
         <div className="relative flex flex-col py-[137px] px-[30px] mx-auto h-full items-center">
           <p className="text-[#1C4B0B] text-center tracking-[-2%] font-medium text-[12px] leading-[12px] mb-[67px]">
             Connect with Experts Anytime, Anywhere.
@@ -101,7 +101,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

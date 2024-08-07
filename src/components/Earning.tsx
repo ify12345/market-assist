@@ -26,8 +26,8 @@ const Earning = () => {
   }, []);
 
   return (
-    <div className=" bg-[#ECF8E8]  w-full justify-center lg:flex flex-col lg:flex-row items-center px-[30px] lg:pl-[52px] lg:pr-[100px] gap-[150px]">
-      <div className="max-w-[602px] w-full revealLeft">
+    <div className=" bg-[#ECF8E8]  w-full justify-center flex flex-col-reverse lg:flex-row items-center px-[30px] pt-[116px] lg:pt-0 pb-[140px] lg:pb-0 lg:pl-[52px] lg:pr-[100px] gap-[50px] lg:gap-[150px]">
+      <div className="max-w-[602px] w-full">
         <img
           className="w-full object-cover"
           src="/images/hero4.png"
@@ -35,8 +35,8 @@ const Earning = () => {
         />
       </div>
 
-      <div className="flex flex-col gap-[30px] w-full max-w-[527px] pt-[151px] pb-[150px] reveal">
-        <h1 className="text-black text-[40px] leading-[48px] font-bold  w-full flex flex-col">
+      <div className="flex flex-col gap-[30px] w-full max-w-[527px] lg:pt-[151px] lg:pb-[150px] reveal">
+        <h1 className="text-black text-[20px] lg:text-[40px] leading-[48px] font-bold  w-full flex flex-col">
           Start Earning Through Shopping.
         </h1>
         <h6 className="text-black text-[20px] leading-[26px] font-medium -tracking-[2%]">
