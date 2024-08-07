@@ -11,13 +11,13 @@ const Advantage = () => {
       origin: "bottom",
       distance: "20px",
       duration: 1000,
-      interval: 400,
+      interval: 200,
       reset: true,
     });
     ScrollReveal().reveal(".revealLeft", {
       origin: "left",
       distance: "60px",
-      duration: 2000,
+      duration: 1000,
       interval: 100,
       reset: true,
     });
@@ -67,7 +67,7 @@ const Advantage = () => {
         </button>
       </div>
 
-      <div className="max-w-[] reveal">
+      <div className="max-w-[580px] reveal">
         <img src="/images/hero2.jpg" className="w-full object-cover" alt="" />
       </div>
     </div>
