@@ -25,11 +25,11 @@ const Hero = () => {
   return (
     <>
       <div className="bg-[#ECF8E8]  w-full justify-center lg:flex flex-col lg:flex-row items-center px-[30px] lg:px-[100px] gap-[72px]">
-        <div className="flex flex-col w-full max-w-[538px] pt-[183px] pb-[155px] revealLeft">
+        <div className="flex flex-col w-full max-w-[538px] pt-[183px] pb-[155px]">
           <h6 className="text-primary text-[15px] leading-normal font-semibold">
             Connect with Experts Anytime, Anywhere.
           </h6>
-          <h1 className="text-black text-[50px] leading-[50px] font-bold pt-[10px] pb-[30px] w-full max-w-[517px] flex flex-col">
+          <h1 className="text-black text-[20px] lg:text-[50px] leading-[50px] font-bold pt-[10px] pb-[30px] w-full max-w-[517px] flex flex-col">
             <span> Your Personal</span>
             Guide to Every Market
           </h1>
